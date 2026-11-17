@@ -77,6 +77,13 @@
                                             <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hAe-tY-b2m"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="IMC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQe-Y1-qlz">
+                                        <rect key="frame" x="8" y="235" width="377" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -93,6 +100,7 @@
                     <connections>
                         <outlet property="height" destination="anE-0K-OKZ" id="PPf-Ma-XBJ"/>
                         <outlet property="imc" destination="fXn-ro-u1x" id="Npo-a4-RxB"/>
+                        <outlet property="imc_desc" destination="kQe-Y1-qlz" id="r7w-bx-GVM"/>
                         <outlet property="weight" destination="FTI-cv-fSw" id="i4g-Zd-InE"/>
                     </connections>
                 </viewController>

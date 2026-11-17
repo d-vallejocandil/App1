@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     var height_show = 150.0
     var weight_show = 50.0
     @IBOutlet weak var imc: UILabel!
+    @IBOutlet weak var imc_desc: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -27,5 +28,19 @@ class ViewController: UIViewController {
     @IBAction func button(_ sender: Any) {
         let imc = weight_show / pow(height_show / 100, 2)
         self.imc.text = String(format: "%.2f", imc)
+        switch imc {
+        case 0..<18.5:
+            imc_desc.text = "Bajo peso"
+            imc_desc.textColor = UIColor.regular
+        case 18.5..<25:
+            imc_desc.text = "Peso normal"
+            imc_desc.textColor = UIColor.bien
+        case 25..<30:
+            imc_desc.text = "Sobrepeso"
+            imc_desc.textColor = UIColor.regular
+        default:
+            imc_desc.text = "Obesidad"
+            imc_desc.textColor = UIColor.mal
+        }
     }
 }
